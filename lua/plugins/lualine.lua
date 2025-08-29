@@ -7,9 +7,9 @@ return {
   opts = function ()
     local opts = {
       options = {
-        theme = "auto",
+        theme = "tomorrow_night",
         component_separators = { left = "|", right = "|" },
-        section_separators = { left = "█", right = "█" },
+        section_separators = { left = '', right = '' },
       },
       extensions = { "nvim-tree" },
       sections = {
