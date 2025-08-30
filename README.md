@@ -33,3 +33,5 @@
 - For lsp
     - mingw-winlibs-llvm-msvcrt
     - java ≥ 21
+## Config PowerShell
+- disable the default <Ctrl+C> and <Ctrl+V> shortcuts in PowerShell
