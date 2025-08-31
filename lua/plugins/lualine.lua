@@ -17,6 +17,7 @@ return {
         lualine_b = {'branch'},
         lualine_c = {'filename', 'diagnostics'},
         lualine_x = {'encoding',
+          'fileformat',
           {
             'lsp_status',
             icon = 'lsp ~',
