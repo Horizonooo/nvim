@@ -16,17 +16,21 @@ return {
         lualine_a = {'mode'},
         lualine_b = {'branch'},
         lualine_c = {'filename', 'diagnostics'},
-        lualine_x = {'encoding',
-          'fileformat',
+        lualine_x = {
+          'encoding',
+          {
+            function ()
+              return "Tab:" .. vim.api.nvim_buf_get_option(0, "shiftwidth")
+            end
+          },
           {
             'lsp_status',
-            icon = 'lsp ~',
             symbols = {
               done = ''
             }
           }
         },
-        lualine_y = {},
+        lualine_y = {'fileformat'},
         lualine_z = {'%l/%L'}
       },
     }
